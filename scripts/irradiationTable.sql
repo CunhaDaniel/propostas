@@ -1,4 +1,3 @@
---Table values of solar irradiation--
 
 CREATE TABLE irradiation(
     cod INTEGER(5) NOT NULL AUTO_INCREMENT, 

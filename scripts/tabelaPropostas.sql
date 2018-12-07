@@ -1,19 +1,18 @@
---- Tabela de propostas ---
 
-create table propostas(
-	id int auto_increment, primary key(id),
-    id_contrato int,
-    mercado varchar(4),
-    tipo varchar(10),
-    cpf varchar(11),
-    cnpj varchar(14),
-    numero_telefone varchar(11),
-    origem varchar(40),
-    cliente varchar(40),
-    grupo varchar(40),
-    data_pedido date,
-    data_entrega date,
-    stat varchar(10),
-    tam int,
-    endereco varchar(40),
+
+CREATE TABLE propostas(
+	id INTEGER(5) AUTO_INCREMENT, 
+    contrato VARCHAR(9),
+    proposta VARCHAR(9),
+    mercado VARCHAR(4),
+    tipo VARCHAR(10),
+    origem VARCHAR(40),
+    grupo VARCHAR(40),
+    data_pedido DATE,
+    data_entrega DATE,
+    status VARCHAR(40),
+    sistema FLOAT(8),
+    valor FLOAT(10),
+    endereco VARCHAR(40),
+    primary key(id)
 );
